@@ -1,0 +1,24 @@
+Research: Compare semantic tags with <div> — when should each be used?
+
+Semantic tags
+
+    use semantic tags whenever a built-in HTML element accurately describes the content.
+
+1. Use semantic tags when the content has a meaningful role or purpose
+    -It describes what the content is ( <nav>, <Header>, <<article>, <aside> )
+
+2. To improve accessibility
+    -Screen readers recognize these elements and can navigate the structure more easily
+
+3. better SEO
+    - The search engine understand the structure of the page and index content more intelligently.
+
+
+Use <div> when
+
+    - There is no suitable semantic element available.
+    - To group elements for styling
+    - to use as a container for layout purpose before css framework or page styling is applied
+    - to use as a hook for javascript
+    
+    
