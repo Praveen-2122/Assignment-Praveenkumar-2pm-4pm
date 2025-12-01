@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Stack three blocks vertically and center them in the viewport using flex. -->
+    <style>
+        .container{
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: rgba(249, 251, 250, 0.49);
+        }
+        .Block{
+            
+            border-radius: 15px;
+            background-color: rgb(183, 255, 231);
+            padding: 20px ;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Block">Block1</div>
+        <div class="Block">Block2</div>
+        <div class="Block">Block3</div>
+    </div>
+</body>
+</html>
