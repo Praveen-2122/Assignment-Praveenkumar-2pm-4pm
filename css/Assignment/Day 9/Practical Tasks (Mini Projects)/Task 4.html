@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Document</title>
+
+<!-- Dashboard Toolbar — Create a toolbar containing filters (left), search (center), and action group (right). Use margin-left: auto or gap to align groups. -->
+
+<style>
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .dashboard{
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #252;
+    color: white;
+    gap: 24px;
+  }
+  .filters, .actions {
+    display: flex;
+    gap: 12px;
+  }
+
+  /* center area grows by flex */
+  .search {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+  }
+  .search input {
+    width: 400px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+  }
+  button {
+    padding: 8px 16px;
+    background-color: beige;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: rgb(73, 69, 69);
+    font-size: 14px;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Push actions to the right */
+
+  .actions {
+    margin-left: auto;
+  }
+</style>
+</head>
+<body>
+
+  <div class="dashboard">
+    <div class="filters">
+      <button>Wishlist</button>
+      <button>Cart</button>
+      <button>Profile</button>
+    </div>
+    <div class="search">
+      <input type="search" placeholder="Search product by name..." />
+    </div>
+    <div class="actions">
+      <button>Add</button>
+      <button>Delete</button>
+    </div>
+  </div>
+
+</body>
+</html>

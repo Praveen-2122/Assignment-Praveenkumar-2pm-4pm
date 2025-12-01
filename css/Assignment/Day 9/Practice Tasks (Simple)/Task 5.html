@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!--Fix an overflowing text block inside a flex item by applying the correct min-width setting.-->
+
+    <style>
+        .container{
+            display: flex;
+            border: 5px solid red;
+            padding: 10px;
+            gap: 10px;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        
+        .item1{
+            border: 3px solid salmon;
+            padding: 8px;
+            width: 80px;
+        }
+        .item{
+            border: 3px solid salmon;
+            padding: 8px;
+            min-width: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Label:</div>
+        <div class="item">The text-overflow property may be specified using one or two values. If one value is given, it specifies overflow behavior for the end of the line (the right end for left-to-right text, the left end for right-to-left text). If two values are given, the first specifies overflow behavior for the left end of the line, and the second specifies it for the right end of the line. The property accepts either a keyword value (clip or ellipsis) or a <string> value.</div>
+    </div>
+</body>
+</html>
