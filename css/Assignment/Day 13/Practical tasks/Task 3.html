@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            /* equal spacing between rows & columns */
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        .product-card img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 6px 12px;
+            background: teal;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .product-card h3 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQD74NUXgzR_qVkdoO4jjOtIh6ySMML4RtA&s"
+                alt="Casio">
+            <h3>Casio | ₹3,395</h3>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://cdn.shopify.com/s/files/1/0261/8900/4880/files/D099_480x480.jpg?v=1709124631" alt="Casio">
+            <h3>Casio | ₹3,395</h3>
+            <button>Buy Now</button>
+
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKCDRKYzrGCj9foohtrmafhffRdhthgJ599Q&s"
+                alt="Casio G-Shock">
+            <h3>Casio G-Shock | ₹10,450</h3>
+            <button>Buy Now</button>
+
+        </div>
+    </div>
+</body>
+
+</html>

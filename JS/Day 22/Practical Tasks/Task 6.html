@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Build a “Dark Mode” button that toggles page colors. -->
+
+    <button id="darkBtn">Toggle Dark Mode</button>
+<script>
+let isDark = false;
+document.getElementById("darkBtn").addEventListener("click", function() {
+  isDark = !isDark;
+  document.body.style.backgroundColor = isDark ? "black" : "white";
+  document.body.style.color = isDark ? "white" : "black";
+});
+</script>
+
+</body>
+</html>

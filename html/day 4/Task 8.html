@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Build a student registration form with validation.-->
+    <form>
+        <h1>Student Registraion Forms</h1>
+        <label for="name"><b>Name</b></label>
+        <input type="text" name="name" placeholder="Enter Your Name">
+        <br>
+        <br>
+        <label for="email"><b>Email</b></label>
+        <input type="text" name="Email" placeholder="Enter your mail">
+        <br><br>
+
+        <label for="Phone"><b>Phone</b></label>
+        <input type="tel" name="Phone" placeholder="Enter your Number" required pattern="[0-9]{10}">
+        <br><br>
+
+        <label for="age"><b>Age:</b></label>
+        <input type="number" name="age" required min="16" max="55">
+        <br><br>
+
+        <label for="Course"><b>Select Your Course</b></label>
+        <select name="course" id="Course">
+        <option value="Frontend">Frontend</option>
+        <option value="Backend">Backend</option>
+        <option value="Devops">Dvops</option>
+        </select>
+        <br><br>
+
+        <label for="Gender"><b>Gender :</b></label> 
+        <label for="">Male</label>
+        <input type="radio" name="gender" value="male">
+        <label for="">Female</label>
+        <input type="radio" name="gender" value="Female">
+        <br><br>
+
+        <button type="Submit">SUBMIT</button>
+    </form>
+</body>
+</html>

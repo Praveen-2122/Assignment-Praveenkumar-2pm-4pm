@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Cinzel", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: rgb(243, 69, 69);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1rem;
+            z-index: 1000;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 10rem;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 700;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s;
+
+        }
+
+        .nav-list a:hover {
+            background: salmon;
+            color: aliceblue;
+        }
+
+        .hero{
+            margin-top: 70px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 2rem;
+            background: linear-gradient(45deg, rgb(13, 194, 210), rgb(75, 252, 116), rgb(14, 231, 198));
+            
+        }
+
+        .hero h1{
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 16px;
+        }
+        .hero h2{
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 16px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3) ;
+        }
+        .hero p{
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+
+        .about{
+            text-align: center;
+            padding: 5rem 2rem;
+            margin: 0 auto;
+            max-width: 1200px;
+            
+        }
+        .about h2{
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="hero">
+        <h1>PraveenKumar</h1>
+        <h2>FrontEnd Developer</h2>
+        <p>Building modern, responsive websites and web applications</p>
+    </div>
+
+    <div class="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate web developer creating <strong>dynamic, user-friendly websites</strong>. I specialize in
+            modern web technologies and deliver high-quality solutions for clients worldwide.</p>
+    </div>
+   
+    <section class="projects" id="projects">
+      <div class="content">
+        <h2>My Projects</h2>
+        <div class="project-list">
+          <div class="project-card">
+            <h3>Project One</h3>
+            <p>Short description of what the project is about.</p>
+          </div>
+          <div class="project-card">
+            <h3>Project Two</h3>
+            <p>Short description of what the project is about.</p>
+          </div>
+          <div class="project-card">
+            <h3>Project Three</h3>
+            <p>Short description of what the project is about.</p>
+          </div>
+          <div class="project-card">
+            <h3>Project Four</h3>
+            <p>Short description of what the project is about.</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+</body>
+
+</html>

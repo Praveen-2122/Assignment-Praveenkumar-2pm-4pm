@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Create an input field that updates text live below it.-->
+     
+    <input id="nameInput" placeholder="Type here...">
+<p id="liveText">Waiting for input...</p>
+<script>
+document.getElementById("nameInput").addEventListener("input", function() {
+  document.getElementById("liveText").textContent = "You typed: " + this.value;
+});
+</script>
+
+</body>
+</html>

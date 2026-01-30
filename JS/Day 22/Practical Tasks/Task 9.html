@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Create multiple buttons that change colors using addEventListener(). -->
+    <button class="colorBtn" data-color="red">Red</button>
+<button class="colorBtn" data-color="blue">Blue</button>
+<button class="colorBtn" data-color="green">Green</button>
+<p id="colorBox" style="width:100px;height:100px;background:gray;">Color Box</p>
+
+<script>
+document.querySelectorAll(".colorBtn").forEach(btn => {
+  btn.addEventListener("click", function() {
+    document.getElementById("colorBox").style.backgroundColor = this.dataset.color;
+  });
+});
+</script>
+
+</body>
+</html>

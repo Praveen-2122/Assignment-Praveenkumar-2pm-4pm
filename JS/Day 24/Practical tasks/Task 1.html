@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="numberInput" placeholder="Enter a number">
+<button onclick="validateNumber()">Validate</button>
+<div id="result"></div>
+
+<script>
+function validateNumber() {
+  try {
+    let value = document.getElementById("numberInput").value;
+    let num = Number(value);
+    
+    if (isNaN(num)) {
+      throw new Error("Please enter a valid number!");
+    }
+    
+    document.getElementById("result").textContent = `Valid number: ${num}`;
+  } catch (error) {
+    document.getElementById("result").textContent = "Error: " + error.message;
+  }
+}
+</script>
+
+</body>
+</html>

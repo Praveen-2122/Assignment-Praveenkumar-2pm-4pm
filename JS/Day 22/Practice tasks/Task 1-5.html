@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practice Tasks</title>
+</head>
+<body>
+  <h1 id="heading">Original Heading Text</h1>
+  <button onclick="changeHeading()">Change Heading Text</button> 
+
+  <p class="para">Original paragraph text.</p>
+  <button onclick="changeParaColor()">Change Para Color</button>
+
+  <ul id="myList">
+    <li>Original Item 1</li>
+  </ul>
+  <button onclick="addItems()">Add 3 Items</button>
+  <button onclick="removeFirstItem()">Remove First Item</button>
+
+  <button id="bgBtn">Change Background Color</button>
+
+  <script>
+    function changeHeading() {
+      document.getElementById("heading").textContent = "Heading Text Changed!";
+    }
+
+    function changeParaColor() {
+      document.querySelector(".para").style.color = "blue";
+    }
+
+    function addItems() {
+      const list = document.getElementById("myList");
+      for (let i = 1; i <= 3; i++) {
+        let newItem = document.createElement("li");
+        newItem.textContent = `Dynamic Item ${i}`;
+        list.appendChild(newItem);
+      }
+    }
+
+    function removeFirstItem() {
+      const list = document.getElementById("myList");
+      if (list.firstElementChild) {
+        list.removeChild(list.firstElementChild);
+      }
+    }
+
+    document.getElementById("bgBtn").addEventListener("click", function() {
+      document.body.style.backgroundColor = "lightblue";
+    });
+  </script>
+</body>
+</html>

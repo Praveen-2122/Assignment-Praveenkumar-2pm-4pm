@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Create a chat screen: messages stacked from bottom to top using column-reverse, with the input always at the bottom. Implement proper scrolling behavior.-->
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Chat Container and texts */
+
+        .chat{
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            border: (5px solid #ccc);
+            background-color: #fafafa;
+            height: 100vh;
+            margin: 0 auto;
+        }
+        .Texts{
+            display: flex;
+            flex: 1;
+            flex-direction: column-reverse;
+            overflow: auto;
+            padding: 16px;
+            gap: 14px;
+            background-color: #f0f0f0;
+         
+        }
+        .message{
+            background-color: #007bff;
+            color: white;
+            border-radius: 15px;
+            padding: 10px 16px;
+            max-width: 75%;
+            align-self:flex-end ;
+        }
+        .messages{
+            background-color: #007bff;
+            color: white;
+            border-radius: 15px;
+            padding: 10px 16px;
+            max-width: 75%;
+            align-self:flex-start ;
+        }
+        
+        /* Input Area */
+
+        .inputs{
+            display: flex;
+            padding: 10px 16px;
+            background-color: white;
+            border-top: 1px solid #ccc;
+        }
+        .inputs input{
+            flex: 1;
+            padding: 8px 12px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            margin-right: 8px;
+            
+        }
+        .inputs button{
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;  
+        }      
+    </style>
+</head>
+<body>
+    <div class="chat">
+        <div class="Texts">           
+            <div class="messages">fine da</div>
+            <div class="message">how are you bruh</div>
+            <div class="messages">heyy buddy</div>
+            <div class="message">Hii</div>
+        </div>
+
+        <div class="inputs">
+            <input type="text" placeholder="Type a message..">
+            <button>Send</button>
+        </div>
+    </div>
+</body>
+</html>

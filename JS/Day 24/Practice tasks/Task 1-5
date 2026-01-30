@@ -1,0 +1,25 @@
+// An error is a problem that occurs while JavaScript code is being parsed or executed.
+
+// types of errors
+
+//     syntax errors 
+//     runtime errors
+//     logical errors
+
+// Runtime vs Logical Error Difference
+// Runtime errors crash execution and throw exceptions (like undefinedVariable.property). Logical errors run silently but give incorrect output (like sum += i in wrong loop condition). Runtime = crash; Logical = wrong result.
+
+// try {
+//   // Code that might fail
+//   riskyOperation();
+// } catch (error) {
+//   // Handles runtime errors, prevents crash
+//   console.log(error.message);
+// } finally {
+//   // Always executes (cleanup)
+//   cleanupResources();
+// }
+
+
+// throw creates custom errors with meaningful messages for validation, user input checking, or business rules. Provides controlled error flow instead of silent failures.
+// ​

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Counter</h1>
+    <p>Count: <span id="c">0</span></p>
+    <button onclick="c()">+</button><button onclick="d()">-</button>
+
+    <script>
+        let n = 0;
+        const c = () => { n++; document.getElementById('c').textContent = n };
+        const d = () => { n--; document.getElementById('c').textContent = n };
+    </script>
+</body>
+
+</html>

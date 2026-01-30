@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Make a “To-Do List” app using appendChild() and removeChild().-->
+     
+    <input id="todoInput" placeholder="New task">
+<button onclick="addTodo()">Add Task</button>
+<ul id="todoList"></ul>
+<script>
+function addTodo() {
+  let input = document.getElementById("todoInput");
+  let newTask = document.createElement("li");
+  newTask.textContent = input.value;
+  document.getElementById("todoList").appendChild(newTask);
+  input.value = "";
+}
+
+document.getElementById("todoList").addEventListener("click", function(e) {
+  if(e.target.tagName === "LI") e.target.parentNode.removeChild(e.target);
+});
+</script>
+
+</body>
+</html>

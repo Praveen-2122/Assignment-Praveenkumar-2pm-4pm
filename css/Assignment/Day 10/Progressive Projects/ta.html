@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PraveenKumar | FrontEnd Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; }
+
+        /* Fixed Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .nav-list a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+        .nav-list a:hover { background: #667eea; color: white; }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 2rem;
+            margin-top: 70px;
+        }
+        .hero h1 { 
+            font-size: clamp(3rem, 8vw, 6rem); 
+            font-weight: 700;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+            margin-bottom: 1rem;
+        }
+        .hero h2 { 
+            font-size: clamp(1.5rem, 4vw, 2.5rem); 
+            font-weight: 400;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+        .hero p { 
+            font-size: 1.2rem; 
+            max-width: 600px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        /* About */
+        .about {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        /* Projects */
+        .projects {
+            padding: 5rem 2rem;
+            background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+        .projects::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: 1;
+        }
+        .projects > * { position: relative; z-index: 2; color: white; }
+
+        .projects h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .project-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            position: relative;
+            transition: transform 0.3s;
+        }
+        .project-card:hover { transform: translateY(-10px); }
+        .project-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Badge */
+        .badge {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background: #ff4757;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            z-index: 20;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul class="nav-list">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero -->
+    <div id="Home" class="hero">
+        <h1>PraveenKumar</h1>
+        <h2>FrontEnd Developer</h2>
+        <p>Building modern, responsive websites and web applications</p>
+    </div>
+
+    <!-- About -->
+    <div class="about" id="About">
+        <h2>About Me</h2>
+        <p>I'm a passionate web developer creating <strong>dynamic, user-friendly websites</strong>. I specialize in modern web technologies and deliver high-quality solutions for clients worldwide.</p>
+    </div>
+
+    <!-- Projects -->
+    <div id="Projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="badge">New</div>
+                <h3>Portfolio Management System</h3>
+                <p>A portfolio management system (PMS) helps investors track, analyze, and manage investment portfolios to meet financial goals while managing risk. It provides a central hub for all investment data.</p>
+            </div>
+            <div class="project-card">
+                <div class="badge">3</div>
+                <h3>Task Management Tool</h3>
+                <p>Task management tools help teams organize, track, and collaborate on projects using task lists, timelines, and dashboards for better productivity.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

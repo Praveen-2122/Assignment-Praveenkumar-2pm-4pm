@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services Section</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    .services-section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .services-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .services-section p.section-subtitle {
+      color: #6b7280;
+      margin-bottom: 24px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px; 
+    }
+
+    .service-card {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      text-align: left;
+    }
+
+    .service-title {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      color: #111827;
+    }
+
+    .service-text {
+      font-size: 0.95rem;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <section class="services-section">
+    <h2>Our Services</h2>
+    <p class="section-subtitle">Clean grid layout with 3–4 responsive cards.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3 class="service-title">Web Development</h3>
+        <p class="service-text">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3 class="service-title">UI Design</h3>
+        <p class="service-text">
+          Lorem ipsum dolor sit amet consectetur.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3 class="service-title">App Development</h3>
+        <p class="service-text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet impedit nostrum sequi!
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3 class="service-title">Web design</h3>
+        <p class="service-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cum!
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

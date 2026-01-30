@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Delayed</h1>
+    <input id="m"><button onclick="s()">Send</button>
+    <p id="o"></p>
+
+    <script>
+        function s() { setTimeout(() => { document.getElementById('o').textContent = 'Done: ' + document.getElementById('m').value }, 1000) }
+    </script>
+</body>
+
+</html>

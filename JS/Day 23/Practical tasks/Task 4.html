@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="validationForm">
+        <input id="username" placeholder="Username" required>
+        <span id="userError" style="color:red;"></span><br>
+        <input id="password" type="password" placeholder="Password" required>
+        <span id="passError" style="color:red;"></span><br>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById("validationForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            if (!username) {
+                document.getElementById("userError").textContent = "Username required!";
+                return;
+            }
+            if (!password || password.length < 6) {
+                document.getElementById("passError").textContent = "Password must be 6+ chars!";
+                return;
+            }
+
+            alert("Form Valid! ✅");
+        });
+    </script>
+
+</body>
+
+</html>

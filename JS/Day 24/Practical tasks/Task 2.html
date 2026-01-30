@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="username" placeholder="Username">
+<button onclick="checkForm()">Check Form</button>
+<div id="errorMsg" style="color:red;"></div>
+
+<script>
+function checkForm() {
+  try {
+    let username = document.getElementById("username").value;
+    
+    if (!username.trim()) {
+      throw new Error("Username cannot be empty!");
+    }
+    
+    document.getElementById("errorMsg").textContent = "✓ Form is valid!";
+    document.getElementById("errorMsg").style.color = "green";
+  } catch (error) {
+    document.getElementById("errorMsg").textContent = error.message;
+  }
+}
+</script>
+
+</body>
+</html>

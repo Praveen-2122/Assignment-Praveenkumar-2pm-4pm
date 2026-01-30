@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Fake API</h1>
+    <button onclick="a()">Call API</button>
+    <p id="r"></p>
+
+    <script>
+        function a() { new Promise(r => setTimeout(() => r('User: John'), 500)).then(d => document.getElementById('r').textContent = d) }
+    </script>
+</body>
+
+</html>

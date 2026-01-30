@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input id="nameInput" placeholder="Name" style="display:block;margin:5px;">
+        <input id="emailInput" type="email" placeholder="Email" style="display:block;margin:5px;">
+    </form>
+    <div id="preview" style="border:1px solid #ccc;padding:20px;margin-top:10px;">
+        Preview: <strong id="previewText">Fill form above</strong>
+    </div>
+    <script>
+        function updatePreview() {
+            let name = document.getElementById("nameInput").value;
+            let email = document.getElementById("emailInput").value;
+            document.getElementById("previewText").textContent =
+                `Name: ${name || 'N/A'}, Email: ${email || 'N/A'}`;
+        }
+
+        document.getElementById("nameInput").addEventListener("input", updatePreview);
+        document.getElementById("emailInput").addEventListener("input", updatePreview);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+           font-family: 'Times New Roman', Times, serif;
+           background-color: rgb(255, 255, 255); margin: 0px; padding: 20px;
+        }
+        table{
+            width: 20%;
+            margin: 0px auto; background-color: rgb(11, 11, 11);
+        }
+        th{
+            color:rgb(31, 125, 47); border: 10px;
+            background-color:rgb(246, 246, 246) ; padding: 20px; text-align: center;
+        }
+        td{
+            color: black; 
+            border: 1px;
+            background-color: rgb(243, 242, 241); padding: 10px; text-align: center;
+        }
+        .Break{
+            background-color: rgb(95, 204, 204);
+        }
+
+    </style>
+</head>
+<body>
+    <!--Build a timetable using a table with styled rows.-->\
+    <h1>Time Table</h1>
+    <table>
+        <th>Time</th>
+        <th>MONDAY</th>
+        <TH>TUESDAY</TH>
+        <TH>WEDNESDAY</TH>
+        <TH>THURSDAY</TH>
+        <TH>FRIDAY</TH>
+        
+        <tr>
+            <td>9.00-10.00</td>
+            <td>P.E.T</td>
+            <td>English</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Biology</td>
+        </tr>
+
+        <tr>
+            <td>10.00-11.00</td>
+            <td>Maths</td>
+            <td>Biology</td>
+            <td>Library</td>
+            <td>English</td>
+            <td>Science</td>
+        </tr>
+
+        <tr>
+            <td>11.00-11.20</td>
+            <td colspan="5" class="Break">Break</td>
+        </tr>
+
+        <tr>
+            <td>11.20-12.20</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Biology</td>
+            <td>Lab</td>
+            <td>English</td>
+        </tr>
+        
+        <tr>
+            <td>12.20-1.30</td>
+            <td colspan="5" class="Break">Lunch Break</td>
+        </tr>
+        <tr>
+            <td>1.30-2.30</td>
+            <td>Lab</td>
+            <td>English</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Biology</td>
+        </tr>
+
+        <tr>
+            <td>2.30-3.30</td>
+            <td>P.E.t</td>
+            <td>Library</td>
+            <td>Lab</td>
+            <td>Biology</td>
+            <td>Library</td>
+        </tr>
+    </table>
+</body>
+</html>

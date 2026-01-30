@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Fetch</h1>
+    <button onclick="f()">Get Data</button>
+    <p id="d"></p>
+
+    <script>
+        async function f() {
+            document.getElementById('d').textContent = 'Loading...';
+            const data = await new Promise(r => setTimeout(() => r('Jane, 25'), 500));  // ✅ Fixed
+            document.getElementById('d').textContent = data
+        }
+    </script>
+</body>
+
+</html>

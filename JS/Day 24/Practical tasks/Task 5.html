@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- BROKEN CODE (Logical Error) -->
+<button onclick="debugThis()">Debug Me</button>
+<div id="debugOutput"></div>
+
+<script>
+// Logical Error: Wrong condition (i > 10 instead of i < 10)
+function debugThis() {
+  try {
+    let sum = 0;
+    for (let i = 0; i > 10; i++) {  // BUG: Never executes!
+      sum += i;
+    }
+    throw new Error(`Loop never ran! Sum should be calculated. Expected: ${sum}`);
+  } catch (error) {
+    document.getElementById("debugOutput").innerHTML = 
+      `<strong>Fixed version:</strong><br>${error.message}<br>
+       <small>Fix: Change 'i > 10' to 'i < 10'</small>`;
+  }
+}
+</script>
+
+</body>
+</html>

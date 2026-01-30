@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Create an input field and use the input event to display typed text live. -->
+
+    <input type="text" id="liveInput" placeholder="Type live...">
+    <p id="output">Type above to see live update</p>
+    <script>
+        document.getElementById("liveInput").addEventListener("input", function () {
+            document.getElementById("output").textContent = "You typed: " + this.value;
+        });
+    </script>
+
+</body>
+
+</html>

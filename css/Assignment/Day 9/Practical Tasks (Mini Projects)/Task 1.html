@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--3-column pricing section that becomes a single column on small screens-->
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card{
+            flex: 1;
+            border: 2px solid lawngreen;
+            padding: 20px;
+            text-align: center;
+        }
+        /* Responsive Pricing Cards columns */
+        @media(max-width:600px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h3>Basic plan</h3>
+            <p>&#8377;100</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <h3>Standard plan</h3>
+            <p>&#8377;500</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <h3>Premium plan</h3>
+            <p>&#8377;999</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>

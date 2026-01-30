@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Login</h1>
+    <input id="u" placeholder="user"><input id="p" placeholder="pass"><button onclick="l()">Login</button>
+    <p id="s"></p>
+
+    <script>
+        async function l() { const u = document.getElementById('u').value; await new Promise(r => setTimeout(r, 1000)); document.getElementById('s').textContent = 'Welcome ' + u + '!' }
+    </script>
+</body>
+
+</html>

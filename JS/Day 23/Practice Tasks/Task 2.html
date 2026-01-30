@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Use mouseover and mouseout events to change the background color of a div. -->
+  <div id="hoverBox" style="width:200px;height:100px;background:lightblue;padding:20px;">
+    Hover over me
+  </div>
+  <script>
+    let box = document.getElementById("hoverBox");
+    box.addEventListener("mouseover", function () {
+      box.style.backgroundColor = "yellow";
+    });
+    box.addEventListener("mouseout", function () {
+      box.style.backgroundColor = "lightblue";
+    });
+  </script>
+
+</body>
+
+</html>
